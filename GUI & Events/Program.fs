@@ -37,7 +37,7 @@ let Mersedes = new Cars(1000000, "Mersedes")
 let CarForm = 
     
     let form = new Form(Text = "Choosing the car")
-    let button = new Button(Text = "Huy", Left = 10,
+    let button = new Button(Text = "Nope", Left = 10,
                                 Top = 10, Width = 80, Enabled = true)
 
     form
