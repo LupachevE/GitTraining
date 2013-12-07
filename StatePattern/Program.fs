@@ -53,9 +53,9 @@ type Account() =
     member this.PayInterest() = 
         let interest = 
             match currentState with
-                | Overdrawn -> 0.0
-                | Silver -> 0.01
-                | Gold -> 0.02
+                | :? Overdrawn -> 0.0
+                | :? Silver -> 0.01
+                | :? Gold -> 0.02 
         interest * balance
     member this.Deposit(x:float) =  
         let (a:float) = x
